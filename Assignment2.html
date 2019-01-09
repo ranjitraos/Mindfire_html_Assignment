@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Registration Page</title>
+    <style>
+
+        input[type=text], [type=email], [type=tel], [type=password], [type=date], [type=radio], [type=number] {
+            margin: 6px 0;
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 2px;
+            width: 100%;
+        }
+        input[type=text]:focus, [type=email]:focus, [type=tel]:focus, [type=password]:focus, [type=date]:focus,[type=radio]:focus,[type=number]:focus {
+            background-color:#eadcdc;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .required:after {
+            content: " *";
+        }
+        .registerbtn {
+            background-color: #166192;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+       .registerbtn:hover {
+           opacity: 1;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            height:150px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <center>
+        <img class="center" src="banner.jpg" />
+        <div style="width:600px;">
+            <img src="logo.jpg" style="width:50px;height:50px;float:left;" />
+            <h1>Register yourself!</h1>
+        </div>
+        
+
+
+        <div style="width: 600px; margin: 0 auto; background: #ffffff; ">
+
+            <fieldset>
+                <legend>Personal information:</legend>
+                <form>
+
+                    <div style="width: 100%; overflow: hidden;">
+                        <div style=" float: left;margin:8px;padding:8px;">
+                            Name:
+                            <br /><br />
+                            <div class="required">First name:</div>
+                            <br />
+                            Middle name:
+                            <br /><br />
+                            <div class="required">Last name:</div>
+                            <br />
+                            <div class="required">Email id:</div>
+                            <br />
+                            <div class="required">Phone:</div>
+                            <br />
+                            Alt. Phone:
+                            <br />
+                            <br />
+                            <div class="required">Password:</div>
+                            <br />
+                            <div class="required">Date of Birth:</div>
+                            <br />
+                            <div class="required">Gender:</div>
+                        </div>
+                        <div style="margin-left: 220px;margin-top:14px;">
+                            <br />
+                            <br /><input type="text" name="firstname" placeholder="firstname" required>
+                            <br /><input type="text" name="middlename" placeholder="middlename">
+                            <br /><input type="text" name="lastname" placeholder="lastname" required>
+                            <br /><input type="email" name="login name" placeholder="email id" required>
+                            <br /><input type="tel" name="phone" placeholder="phone" style="margin-top:12px;" required>
+                            <br /><input type="tel" name="alt_phone" placeholder="Alternate phone">
+                            <br /><input type="password" name="password" placeholder="password" style="margin-top:12px;" required />
+                            <br /><input type="date" name="bday" style="margin-top:10px;" required>
+                            <br />
+                            <input type="radio" name="gender" value="male" checked> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other
+                        </div>
+                    </div>
+
+                    <br />
+                    <div class="required">Current Address:</div><br />
+                    <input type="text" name="curr_addr" placeholder="house number or block number" required /><br />
+                    <input type="text" name="curr_city" placeholder="city" required /><br />
+                    <input type="text" name="curr_state" placeholder="state" required /><br />
+                    <input type="text" name="curr_country" placeholder="country" required /><br />
+                    <input type="number" name="curr_zip" placeholder="zip" required /><br />
+
+                    <br />
+
+                    <div class="required">Permanent Address:</div><br />
+                    <input type="text" name="curr_addr" placeholder="house number or block number" required /><br />
+                    <input type="text" name="curr_city" placeholder="city" required /><br />
+                    <input type="text" name="curr_state" placeholder="state" required /><br />
+                    <input type="text" name="curr_country" placeholder="country" required /><br />
+                    <input type="number" name="curr_zip" placeholder="zip" required />
+
+                    <br /><br /><br />
+                    <div class="required">Personal Interests:</div>
+                    <br />
+
+
+                    <div class="row">
+                        <div class="column">
+                            <input type="checkbox" name="hobbies" value="sports" />Sports
+                            <br /><input type="checkbox" name="hobbies" value="fashion" />Fashion
+                        </div>
+                        <div class="column">
+                            <input type="checkbox" name="hobbies" value="books" />Books
+                            <br />
+                            <input type="checkbox" name="hobbies" value="photography" />Photography
+                        </div>
+                        <div class="column">
+                            <input type="checkbox" name="hobbies" value="computer" />Computer & software
+                            <br />
+                            <input type="checkbox" name="hobbies" value="movies" />Movies
+                        </div>
+
+                        <br /><br />
+                    </div>
+                    <br />
+                    <button type="submit" class="registerbtn">Register</button>
+
+                </form>
+                <p>If you already have an account. <a href="Assignment2.html" style="color:blue;">sign in</a></p>
+            </fieldset>
+
+        </div>
+
+    </center>
+</body>
+</html>
